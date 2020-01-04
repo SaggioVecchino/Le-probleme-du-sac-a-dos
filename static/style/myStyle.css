@@ -1,0 +1,52 @@
+html {
+  height: 100%;
+}
+
+body {
+  /*background: #2c3531;*/
+  background: url("../images/KUVjiJ9.jpg") no-repeat center center fixed;
+  color: #d1e8e2;
+  font-family: "Mali", cursive;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 20px;
+  min-height: 100%;
+}
+
+input[type="text"] {
+  margin: 1px;
+  background-color: #d1e8e2;
+  color: #2c3531;
+  border: 1px solid #116466;
+  border-radius: 0px;
+  width: 50px;
+  transition: background-color 0.1s linear;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+  background-color: #ffcb9a;
+  border: 1px solid #116466;
+  border-radius: 0px;
+  width: 50px;
+}
+
+footer {
+  padding: 3px;
+  background: #d1e8e2;
+  color: #116466;
+  width: 100%;
+  font-size: 12px;
+  letter-spacing: 5px;
+  position: absolute;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
