@@ -1,27 +1,6 @@
 <template>
   <div>
-    <div v-if="!game" id="presentation" class="text-center">
-      <h1>Présentation</h1>
-      <p>
-        En algorithmique, le problème du sac à dos, noté également KP (en anglais, Knapsack problem) est un problème
-        d'optimisation combinatoire. Il modélise une situation analogue au remplissage d'un sac à dos, ne pouvant
-        supporter plus d'un certain poids, avec tout ou partie d'un ensemble donné d'objets ayant chacun un poids et une
-        valeur. Les objets mis dans le sac à dos doivent maximiser la valeur totale, sans dépasser le poids maximum.
-      </p>
-      <br />
-      <h1>Exemple</h1>
-      <div class="p-1">
-        <img src="../assets/exemple.png" alt="exemple" class="rounded center" />
-        <p>
-          Quelles boîtes choisir afin de maximiser la somme emportée tout en ne dépassant pas
-          les 15
-          kg autorisés ?
-        </p>
-      </div>
-      <button class="btn btn-light" @click="game=true;">Place au jeu</button>
-    </div>
-    <!-- else (game) -->
-    <div v-else id="game" class="d-flex flex-wrap justify-content-center">
+    <div id="game" class="d-flex flex-wrap justify-content-center">
       <div class="p-3 col-lg-4 d-flex justify-content-center">
         <div class="text-center">
           <label for="contrainte">
@@ -141,10 +120,9 @@
 
 <script>
 export default {
-  name: "Myapp",
+  name: "App",
   data() {
     return {
-      game: false,
       contrainteNonFiltree: 10,
       objetsNonFiltres: [],
       sizeRefPx: 60,
@@ -401,6 +379,7 @@ li {
 *::selection {
   background: #7acfdf; /* WebKit/Blink Browsers */
 }
+
 *::-moz-selection {
   background: #7acfdf; /* Gecko Browsers */
 }
