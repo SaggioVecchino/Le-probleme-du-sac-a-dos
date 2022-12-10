@@ -10,7 +10,7 @@
     "start": "serve -s dist"
   },
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "npm": "^6.13.4",
     "serve": "^11.3.0",
     "vue": "^2.5.2",
